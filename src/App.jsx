@@ -1,0 +1,28 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+/* PAGES */
+import FiveGSixG from "./pages/5G_6G";
+import FiveGAbout from "./pages/About";
+import FiveGPrograms from "./pages/Programs";
+import Facilities from "./pages/Facilities";
+import NewsEvent from "./pages/NewsEvent";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/COEs/5G6G" element={<FiveGSixG />} />
+
+        <Route path="/COEs/5G6G/about" element={<FiveGAbout />} />
+
+        <Route path="/COEs/5G6G/programs" element={<FiveGPrograms />} />
+
+        <Route path="/COEs/5G6G/facilities" element={<Facilities />} />
+
+        <Route path="/COEs/5G6G/news-event" element={<NewsEvent />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
