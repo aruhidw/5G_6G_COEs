@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/COEs/5G6G" element={<FiveGSixG />} />
+        <Route path="/" element={<FiveGSixG />} />
 
         <Route path="/COEs/5G6G/about" element={<FiveGAbout />} />
 
