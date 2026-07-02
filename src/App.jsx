@@ -7,9 +7,13 @@ import FiveGPrograms from "./pages/Programs";
 import Facilities from "./pages/Facilities";
 import NewsEvent from "./pages/NewsEvent";
 
+// hooks
+import ScrollToTop from "./components/ScrollToTop";
+
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<FiveGSixG />} />
 
